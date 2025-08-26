@@ -1,0 +1,66 @@
+Should Tero wear a helmet?
+
+Threat Modeling Manifesto (2020)
+•	Four key questions: what are we working on, what can go wrong, what are we going to do, did we do enough?
+•	Security must support business.
+•	Not everything can be protected equally.
+•	Idea: Seems heavy for small teams.
+
+Shortest Threat Modeling Course (Shostack 2022)
+•	12 short lessons.
+•	Threat modeling  asking questions, not fancy tools.
+•	Shows simple diagrams (data flow).
+•	Idea: STRIDE is nice, but maybe ATT&CK is more modern.
+
+OWASP Threat Modeling Cheat Sheet (2021)
+•	Steps: define scope → find threats → prioritize → fix → validate.
+•	Repeat often, not one-time.
+•	Lists methods like STRIDE, PASTA, attack trees.
+•	Idea: Could we do a mini threat model every sprint?
+
+Darknet Diaries (Ep. 106 Xbox Underground)
+•	Hackers got into gaming companies.
+•	Motivation was fun and fame, not money.
+•	Showed risks of privileged access.
+•	Thought: Defenses shouldn’t assume money is the only reason to attack.
+
+a) Security hygiene
+For everyone:
+•	Password manager, strong unique passwords.
+•	2FA.
+•	Keep devices updated.
+•	Watch out for phishing.
+•	Backups.
+For companies:
+•	Least privilege.
+•	Patching process.
+•	Monitoring + logs.
+•	Security training.
+•	Backup & incident plan.
+
+b) Threat model – imaginary company
+Company: QuickCart 
+1 What are we working on?
+•	Assets: customer data, orders, payments, uptime.
+•	Customers use app, website, support chat.
+2 What can go wrong?
+•	STRIDE examples: fake logins, record tampering, data leaks, DoS, SQL injection.
+•	Biggest risks: payment data leak, API downtime.
+•	Attackers: ransomware gangs, criminals.
+3 What are we going to do?
+•	Mitigate: MFA, input checks, DDoS protection.
+•	Eliminate: old endpoints.
+•	Transfer: payment handled by provider.
+•	Accept: small IoT risks.
+4 Did we do enough?
+•	Annual pentest, code reviews.
+•	Update threat model often.
+•	Monitor systems.
+•	Security is never done, keep improving.
+
+Sources
+•	Karvinen 2024: Information Security Course
+•	Braiterman et al. 2020: Threat Modeling Manifesto
+•	OWASP 2021: Threat Modeling Cheat Sheet
+•	Darknet Diaries: Ep. 106 Xbox Underground
+
