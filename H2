@@ -1,0 +1,24 @@
+Reference: Hutchins, E. M., Cloppert, M. J., & Amin, R. M. (2011). Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains. Lockheed Martin Corporation. Retrieved from https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf
+
+Abstract (summary)
+•	The paper argues that traditional defenses focus too much on reacting to individual events (signatures, patches, indicators of compromise). This reactive approach often fails because attackers adapt and reuse tools.
+•	It proposes an intelligence-driven defense that studies adversary campaigns over time, focusing on the repeated use of tactics, techniques, and infrastructure.
+•	The Intrusion Kill Chain is introduced as a structured way to map out every step of an intrusion, so defenders can detect and disrupt adversaries at multiple points.
+•	By focusing on adversary behaviors rather than only on malware samples, defenders can anticipate and block entire campaigns instead of isolated attacks.
+My comment:
+This abstract highlights a shift from reactive to proactive security. I wonder how much modern SOCs security operation centers  actually implement intelligence-driven defense versus still relying heavily on signature-based detection.
+
+Chapter 3.2: Intrusion Kill Chain -summary
+The authors describe the seven phases of the kill chain, which model how intrusions happen:
+1.	Reconnaissance: Attacker gathers information about the target environment 
+2.	Weaponization: Combining an exploit with a backdoor to create a deliverable payload .
+3.	Delivery: Transmitting the weaponized payload to the victim  phishing email, USB drive, web exploit.
+4.	Exploitation: The victim executes the code, and the exploit triggers on the system.
+5.	Installation: Malware installs persistence mechanisms.
+6.	Command and Control C2: Attacker establishes communication back to their infrastructure.
+7.	Actions on Objectives: Finally, the attacker achieves their goals like data theft, disruption, espionage.
+•	The core idea: Every attack must progress through these stages. If defenders disrupt any stage, the whole attack chain is broken.
+•	The kill chain also helps in post-incident analysis by showing where defenses failed and where they succeeded.
+My question:
+Breaking the chain sounds effective in theory, but in practice attackers can re-enter with different tactics. Does the kill chain framework risk oversimplifying multi-vector or persistent threats. 
+
