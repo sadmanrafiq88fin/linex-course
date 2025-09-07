@@ -1,0 +1,67 @@
+
+Karvinen 2021: Install Debian on VirtualBox – Updated 2024
+•	Explains how to install Debian Linux inside VirtualBox.
+•	Steps: download Debian ISO, create a new virtual machine, set RAM, CPU, and disk space.
+•	Shows how to add “Guest Additions” for better screen and clipboard.
+•	Introduces the snapshot feature: you can save your system’s state and roll back later.
+•	My thought: Snapshots are useful when experimenting, because I can undo mistakes.
+Karvinen 2020: Command Line Basics Revisited
+•	Basic Linux commands: cd to change folder, pwd to show where you are, ls to list files.
+•	File commands: cp copy, mv move, rm delete.
+•	Use pipes | to connect commands and redirection > to save output.
+•	Use man to read manuals.
+•	My thought: These basics are needed to solve hacking games and real tasks.
+
+a) Can’t Fish – Disable Networking
+Steps done:
+•	First tested Internet with ping -c 4 1.1.1.1 and ping -c 4 8.8.8.8.
+•	With Internet ON: system replied with times (ms).
+•	With Internet OFF: system showed “Network unreachable” or 100% packet loss.
+Analysis:
+•	ping sends small packets to test connection.
+•	Replies = Internet is working.
+•	No replies = Internet is off.
+•	ELI5: Ping is like saying “hello” to a neighbor; if they don’t answer, you are offline.
+
+b) Local Only – Port Scan
+Command used:
+sudo nmap -A localhost
+Result explained:
+•	On a fresh Debian install, all 1000 common TCP ports are closed.
+•	Nmap reported “All scanned ports are closed on localhost.”
+Analysis:
+•	Port scanning checks which doors ports are open on the computer.
+•	Since no services are running, all doors are closed.
+•	ELI5: Like knocking on house doors; nobody opens.
+
+c) Daemon Scan – After Installing Apache
+Steps done:
+sudo apt-get update
+sudo apt-get -y install apache2
+sudo systemctl start apache2
+sudo nmap -A localhost
+Result explained:
+•	After Apache was installed, port 80/tcp appeared open.
+•	Service identified: Apache web server.
+Analysis:
+•	Installing a daemon means one port is now listening for connections.
+•	Before: no open ports.
+•	After: one door port 80 is unlocked.
+•	ELI5: Before, all doors locked. After Apache, one door open for visitors.
+
+d) OverTheWire –
+•	Level 0 → 1: Read password with cat readme. Learned how to read a file.
+•	Level 1 → 2: File name was -. Used cat ./- to read. Learned how to handle tricky names.
+•	Level 2 → 3: File had spaces. Used quotes: cat "spaces in this filename". Learned about quotes.
+•	Level 3 → 4: Password hidden in .hidden file. Used ls -a and cat .hidden. Learned about hidden files.
+•	Level 4 → 5: Many files, only one was text. Used file and grep to find it. Learned how to find human-readable files.
+Conclusion:
+•	Learned basics of files, quoting, hidden files, and detecting file types.
+•	ELI5: It felt like a small treasure hunt using simple commands.
+
+e) Bonus: UnderTheWire
+
+References
+•	Karvinen, T. 2021. Install Debian on VirtualBox – Updated 2024. Retrieved September 7, 2025, from https://terokarvinen.com
+•	Karvinen, T. 2020. Command Line Basics Revisited. Retrieved September 7, 2025, from https://terokarvinen.com
+
