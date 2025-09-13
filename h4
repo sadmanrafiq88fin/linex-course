@@ -1,0 +1,26 @@
+OWASP Top 10 (2021)
+A01:2021 – Broken Access Control
+Means people can get into things they should not.
+Example: a normal user can see admin pages or another person’s files.
+Fix: always check roles and permissions.
+My thought: It’s like giving everyone the same key at school — suddenly anyone can open the principal’s office.
+A05:2021 – Security Misconfiguration
+Happens when settings are wrong or too open.
+Example: default passwords, test pages left online, cloud storage left public.
+Fix: remove defaults, close what you don’t use, follow best practice setups.
+My thought: Easy mistakes here, like leaving the door open when you go out.
+A06:2021 – Vulnerable and Outdated Components
+Using old software with known problems.
+Example: old version of a library that hackers already know how to break.
+Fix: update often, know what parts your system uses.
+My thought: Software is like milk, not wine it goes bad if you don’t check it.
+A03:2021 – Injection
+Bad input goes straight into a command.
+Example: SQL injection lets someone change database queries.
+Fix: use safe coding parameterized queries, filter inputs.
+My thought: This is the “Little Bobby Tables” problem — funny comic, serious danger.
+XKCD 327 – Exploits of a Mom
+Joke: a mom names her kid with SQL code: Robert'); DROP TABLE Students;--.
+If school’s database isn’t safe, it would delete everything.
+Lesson: always check input before using it in code.
+My thought: Funny but scary — shows why input must never be trusted.
