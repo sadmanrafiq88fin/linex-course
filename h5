@@ -1,0 +1,27 @@
+Applied Cryptography: Chapter 1: Foundations
+•	What is cryptography? 
+It’s basically digital wizardry that locks up your data so only the chosen one can open it.
+•	Golden rule: Don’t rely on secret tricks rely on secret keys. Even if the whole world knows your algorithm, your data is safe as long as the key stays hidden.
+•	Why we use it: To keep secrets secret privacy, make sure people are who they claim to be authentication, and stop sneaky edits integrity.
+•	Villains of the story (types of attacks):
+Brute force: the smash every lock approach.
+Math attacks: smart people with smarter equations.
+ Protocol mistakes: the system around crypto fails, even if the math is solid.
+•	Big idea: Cryptography isn’t magic by itself. It only works when combined with good systems and careful human use.
+Reference: Schneier, B. (2015). Applied Cryptography: Protocols, Algorithms, and Source Code in C . John Wiley & Sons. Chapter 1.
+
+Karvinen 2023 – PGP: Send Encrypted and Signed Message 
+•	What is PGP?
+Think of it as sending your secrets in a box that only your friend’s private key can open.
+•	The toolbox:
+1.	Encryption – locks the box so only the receiver can read it.
+2.	Signing – stamps the box with your unique signature, proving it’s really from you.
+•	How it works with GnuPG (gpg):
+1.	Make your key pair: gpg full-generate-key.
+2.	Share your public key like handing out your padlock.
+3.	Encrypt a file: gpg -e -r friend@example.com file.txt.
+4.	Sign something: gpg -s file.txt.
+5.	Verify: gpg --verify file.txt.gpg.
+•	Why it rocks: No need to secretly pass around passwords. Just trade public keys and let the math do the heavy lifting.
+Reference: Karvinen, T. (2023). PGP – Send Encrypted and Signed Message – gpg. Retrieved from https://terokarvinen.com
+
