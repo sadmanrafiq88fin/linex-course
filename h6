@@ -1,0 +1,20 @@
+Going Dark – TOR Assignment
+1. Short summaries
+Quintin (2014) – 7 Things You Should Know About Tor: Tor helps protect privacy and free speech. It is used for both legal and illegal activities. It is open source and publicly audited. Running exit relays can have legal implications.
+Shavers & Bair (2016) – Hiding Behind the Keyboard: Introduction – Tools like Tor are used by journalists and criminals; investigators must use careful methods. History – Tor started with academic and US Navy work to protect online communication. How Tor Works – Uses onion routing with multiple layers of encryption across relays so no single relay knows both source and destination. Tracking Criminals  Attribution is hard; investigators rely on mistakes, server logs, and blockchain analysis.
+2. Tasks 
+a) Install Tor: Downloaded from the official Tor Project site and opened Tor Browser to connect.
+b) Browse (safe examples only): Looked at an onion search engine (DuckDuckGo onion) and a public privacy forum landing page. Checked a news organization’s Secure Drop onion mirror which lists a real-world address. For marketplaces, I did not access illegal sites; instead I reviewed academic/news descriptions.
+c) I2P : I2P uses garlic routing and separate software; similar privacy goals but different design.
+d) Freenet: Focused on anonymous publishing and distributed data storage.
+e) Crypto hunter : If a public Bitcoin address is found on a darknet page, use a blockchain explorer to check transactions do not interact with the site.
+3. Short comparison 
+Tor: Onion routing, good for anonymous web browsing and onion services.
+I2P: Peer-to-peer network, garlic routing, optimized for hidden services and messaging.
+Freenet: Decentralized content store for anonymous, censorship-resistant publishing.
+4. Safety / OPSEC 
+Do not enter personal details or logins on anonymous sites. Tor helps privacy but is not perfect, so do not assume complete anonymity. Use official downloads (torproject.org) and keep software updated. Avoid accessing illegal marketplaces or content.
+5. References
+•	Syverson, P. F., Goldschlag, D. M., & Reed, M. G. (1997). Anonymous Connections and Onion Routing. This is a foundational paper that describes the design, implementation, and threat model of onion routing. ieee-security.org
+•	Tor Project. Tor: The Second-Generation Onion Router (design document / specification). Describes how Tor builds on onion routing, improvements, circuit design, security goals. spec.torproject.org 
+
